@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const navStyle = {
   wrapper: "w-full bg-black h-20 flex justify-between  items-center px-6 pr-8",
-  logo: "text-white text-2xl font-bold w-28 cursor-pointer",
+  logo: "text-white text-2xl font-bold w-30 cursor-pointer font-sans",
   home: "text-white text-2xl font-bold cursor-pointer",
   rides: "text-white sm:text-xl text-xs font-semibold  cursor-pointer",
   login: "text-white text-2xl font-bold w-10  cursor-pointer",
@@ -39,7 +39,8 @@ function Navbar() {
     <div className={navStyle.wrapper}>
       <Link href={`/`}>
         <div className={navStyle.logo}>
-          <Image src={uber} alt="Logo" />
+          Crypto Ride
+          {/* <Image src={uber} alt="Logo" /> */}
         </div>
       </Link>
       {isLogedIn ? (
