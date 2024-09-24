@@ -2,6 +2,8 @@
 
 Crypto-Ride is a blockchain-powered ride-sharing platform aimed at providing decentralized, secure, and transparent services. Users can seamlessly book rides, track routes, and pay for services using cryptocurrencies. This application integrates blockchain technology with real-world ride-hailing services, leveraging smart contracts for trustless transactions.
 
+![Alt text](ss1.gif)
+
 ## Tech Stack
 
 - **Frontend**: Next.js
@@ -30,7 +32,7 @@ Crypto-Ride is a blockchain-powered ride-sharing platform aimed at providing dec
 4. Run the server:
     ```bash
     npm run dev
-5. Access the application on http://localhost:5000.
+5. Access the application on http://localhost:3000.
 ## Acknowledgements
 
 - Mapbox for location services and Map
