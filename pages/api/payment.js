@@ -2,7 +2,7 @@ import addUserRide from "./AddUserRide";
 
 export const chargeUser = async (req) => {
   const { amount, currentUserAddress, metamask, start, end, rideType } = req;
-
+  console.log(Number(amount.toFixed(8) * 1000000000000000000).toString(16));
   try {
     await metamask.request({
       method: "eth_sendTransaction",
@@ -11,7 +11,7 @@ export const chargeUser = async (req) => {
           from: currentUserAddress,
           to: process.env.NEXT_PUBLIC_UBER_ADDRESS,
           gas: "0x7EF40", // 52000 Gas limit
-          value: Number(amount * 1000000000000000000).toString(16), //  wei
+          value: Number(Number(amount.toFixed(8)) * 1000000000000000000).toString(16), //  wei
         },
       ],
     });

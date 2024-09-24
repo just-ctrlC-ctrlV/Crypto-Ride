@@ -64,7 +64,7 @@ function ShowRides() {
                 Drop Point : {ride.end}
               </span>
               <span className="w-1/4 flex justify-center text-sm text-gray-600 dark:text-gray-300">
-                Ride Fair : {ride.amount.toFixed(3)}{" "}
+                Ride Fair : {ride.amount.toFixed(6)}{" "}
                 <Image src={ether} alt="ETH" className="w-6 pl-2" />
               </span>
             </div>
